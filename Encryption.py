@@ -11,7 +11,6 @@ print ("                                                ")
 
 
 print("This Program will create an Encryption for Your Message using the Symmetric Key you have")
-print("Enter a Message you want to Encrypt: ") 
 
 k = input("Enter Your Symmetric Key: ")
 
@@ -21,7 +20,7 @@ print (key )
 
 f = Fernet(key)
 
-msg = input("Enter Yur Message here: ")
+msg = input("Enter Your Message here: ")
 message = msg.encode()
 enc = f.encrypt(message)
 
