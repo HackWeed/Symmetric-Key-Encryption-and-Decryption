@@ -13,7 +13,6 @@ print ("                                                ")
 
 
 print("This Program will Display original message from Your Encrypted Data using the Symmetric Key you have ")
-print("Enter a Encryption you want to Decrypt: ") 
 
 
 num = input("enter you Symmetric Key")
@@ -22,7 +21,7 @@ key = num.encode()
 f = Fernet(key)
 
 
-msg = input("Enter Yur encryption here: ")
+msg = input("Enter Your encryption here: ")
 message = msg.encode()
 enc = f.decrypt(message)
 
